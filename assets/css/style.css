@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #2e8d86;
+}
+.far {
+  color: #2e8d86;
+}
+video:focus {
+  outline: none;
+}
+.container {
+  width: 80%;
+  margin: 50px auto;
+}
+.container h1 {
+  padding: 60px 0;
+  color: #fff;
+  font-size: 44px;
+  text-align: center;
+}
+.main {
+  display: flex;
+  flex-wrap: center;
+  align-items: center;
+}
+.col {
+  flex-basis: 50%;
+  min-width: 250px;
+}
+.thumbnail {
+  width: 83%;
+  margin: auto;
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.small-vid-row {
+  display: flex;
+  background: #efefef;
+  margin: 20px 0;
+  align-items: center;
+  border-radius: 6px;
+  overflow: hidden;
+  width: 85%;
+}
+.small-vid {
+  position: relative;
+  height: 97px;
+}
+.small-vid img {
+  width: 150px;
+}
+.small-vid-row p {
+  margin-left: 20px;
+  color: #707070;
+  line-height: 22px;
+  font-size: 15px;
+}
+.thumbnail .play-btn {
+  font-size: 50px;
+}
+.play-btn {
+  width: 60px;
+  font-size: 25px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.small-vid .play-btn {
+  width: 35px;
+}
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  cursor: pointer;
+  font-size: 25px;
+}
+.videoPlayer {
+  width: 80%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}

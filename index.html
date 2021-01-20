@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Frontend-Task</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Video Gallery</h1>
+      <div class="main">
+        <div class="col">
+          <div class="thumbnail">
+            <img src="assets/pic1.png" width="100%">
+            <i
+              class="far fa-play-circle play-btn"
+              id="play-circle"
+              onclick="playVideo('assets/dummy.mp4')"
+            ></i>
+          </div> 
+        </div>
+        <div class="col">
+          <div class="small-vid-row">
+            <div class="small-vid">
+              <img src="assets/pic2.png">
+              <i class="far fa-play-circle play-btn" onclick="playVideo('assets/dummy.mp4')"></i>
+            </div>
+            <p>Click here to see the video</p>
+          </div>
+          <div class="small-vid-row">
+            <div class="small-vid">
+              <img src="assets/pic3.png">
+              <i class="far fa-play-circle play-btn" onclick="playVideo('assets/dummy.mp4')"></i>
+            </div>
+            <p>Click here to see the video</p>
+          </div>
+          <div class="small-vid-row">
+            <div class="small-vid">
+              <img src="assets/pic4.png">
+              <i class="far fa-play-circle play-btn" onclick="playVideo('assets/dummy.mp4')"></i>
+            </div>
+            <p>Click here to see the video</p>
+          </div>
+        </div>
+      </div>
+        
+      </div>
+    </div>
+    <div id="videoPlayer" class="videoPlayer">
+      <video controls autoplay width="100%"" id="myVideo">
+        <source src="assets/dummy.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <i
+      class="far fa-times-circle close-btn"
+      id="close-btn"
+      onclick="stopVideo()"
+    ></i>
+    </div>
+    <script>
+      var videoPlayer = document.getElementById("videoPlayer")
+      var myVideo = document.getElementById("myVideo")
+
+      function playVideo(file) {
+        myVideo.src = file;
+        videoPlayer.style.display = 'block';
+      }
+      function stopVideo() {
+        videoPlayer.style.display = "none"
+      }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
