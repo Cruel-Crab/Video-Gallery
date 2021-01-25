@@ -16,7 +16,7 @@ video:focus {
   margin: 50px auto;
 }
 .container h1 {
-  padding: 60px 0;
+  padding: 40px 0;
   color: #fff;
   font-size: 44px;
   text-align: center;
@@ -90,4 +90,7 @@ video:focus {
   top: 50%;
   transform: translate(-50%, -50%);
   display: none;
+}
+footer{
+  text-align: center;
 }
